@@ -6,10 +6,12 @@
     <WhyUS />
     <Work />
     <Philosophy />
+    <Faq />
   </main>
 </template>
 
 <script setup>
+import Faq from './components/Faq.vue';
 import Features from './components/Features.vue';
 import Header from './components/Header.vue';
 import Hero from './components/Hero.vue';
