@@ -33,7 +33,7 @@
     </div>
   </section>
 </template>
-
+  
 <script setup>
 import { reactive, markRaw } from 'vue'
 
