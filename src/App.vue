@@ -9,12 +9,14 @@
     <Faq />
     <Contact />
   </main>
+  <Footer />
 </template>
 
 <script setup>
 import Contact from './components/Contact.vue';
 import Faq from './components/Faq.vue';
 import Features from './components/Features.vue';
+import Footer from './components/Footer.vue';
 import Header from './components/Header.vue';
 import Hero from './components/Hero.vue';
 import Philosophy from './components/Philosophy.vue';
