@@ -5,6 +5,7 @@
     <Features />
     <WhyUS />
     <Work />
+    <Philosophy />
   </main>
 </template>
 
@@ -12,6 +13,7 @@
 import Features from './components/Features.vue';
 import Header from './components/Header.vue';
 import Hero from './components/Hero.vue';
+import Philosophy from './components/Philosophy.vue';
 import WhyUS from './components/WhyUS.vue';
 import Work from './components/Work.vue';
 </script>
