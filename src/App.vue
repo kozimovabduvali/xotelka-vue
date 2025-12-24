@@ -7,10 +7,12 @@
     <Work />
     <Philosophy />
     <Faq />
+    <Contact />
   </main>
 </template>
 
 <script setup>
+import Contact from './components/Contact.vue';
 import Faq from './components/Faq.vue';
 import Features from './components/Features.vue';
 import Header from './components/Header.vue';
