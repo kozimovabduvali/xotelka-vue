@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+
+@theme {
+  --font-inter-tight: 'Inter Tight', sans-serif;
+  --font-geologica: 'Geologica', sans-serif;
+  --text-display-32: 2rem;
+  --text-display-56: 3.5rem;
+  /* 56px */
+  /* Colors */
+  --color-primary: #2B2B2B;
+  --color-secondary: #4EB8E7;
+  --color-accent: #E9F8FF;
+  --color-gray: #CEE9F5
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth
+  }
+
+  body {
+    @apply font-inter-tight text-primary !text-base !leading-none overflow-x-hidden
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-geologica
+  }
+
+  button {
+    @apply cursor-pointer
+  }
+}
+
+
+@utility container-base {
+  @apply w-full max-w-264 mx-auto px-4
+}
+
+
+@utility main-btn {
+  @apply inline-flex items-center bg-secondary text-white font-bold min-h-12.75 rounded-lg py-3 px-5 transition duration-300 hover:bg-secondary/75
+}
+
+
+@utility link-hover {
+  @apply transition duration-300 hover:text-primary/75 hover:underline underline-offset-4
+}
+
+
+@utility gradient-main-card {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) -10.06%, rgba(0, 0, 0, 0.21) 100%);
+}
+
+
+@utility gradient-main-card-2 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) -31.13%, rgba(0, 0, 0, 0.65) 100%);
+}
+
+@utility gradient-main-card-3 {
+  background: linear-gradient(98.98deg, #4EB8E7 45.96%, #2E9FD2 89.63%);
+}
+
+@utility gradient-main-card-4 {
+  background: linear-gradient(180deg, #8FDDFF 0%, #0194D4 84.81%);
+}
+
+@utility graident-overlay {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+}
+
+.fade-in {
+  animation: fadeIn 0.2s ease-in-out forwards, scaleIn 0.2s ease-in-out forwards;
+}
+
+.no-scroll::-webkit-scrollbar {
+  @apply !size-0;
+}
+
+
+.checkbox-custom {
+  @apply inline-block relative appearance-none shrink-0 size-4 rounded bg-transparent border border-[#D7D7D7];
+}
+
+.checkbox-custom:checked {
+  @apply bg-secondary border-transparent;
+}
+
+.checkbox-custom:checked::after {
+  content: "";
+  transform: translate(-50%, -50%);
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M20.285 6.708l-11.145 11.145-5.145-5.145 1.415-1.414 3.729 3.728 9.732-9.732z"/></svg>');
+  @apply bg-contain bg-no-repeat absolute top-1/2 left-1/2 size-3;
+}
+
+
+
+.img-flip__reverse {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
