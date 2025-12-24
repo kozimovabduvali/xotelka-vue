@@ -35,7 +35,7 @@
 </template>
 
 <script setup>
-import { reactive } from 'vue'
+import { reactive, markRaw } from 'vue'
 
 // Icon komponentlarini import qilamiz
 import Step1IconNumber from '../components/icons/Step1IconNumber.vue'
@@ -46,21 +46,21 @@ import Step1Icon from '../components/icons/Step1Icon.vue'
 import Step2Icon from '../components/icons/Step2Icon.vue'
 import Step3Icon from '../components/icons/Step3Icon.vue'
 
-// Steps array reactive
+// Steps array reactive — mark imported component objects as raw to avoid reactivity
 const steps = reactive([
   {
-    iconNumber: Step1IconNumber,
-    iconComponent: Step1Icon,
+    iconNumber: markRaw(Step1IconNumber),
+    iconComponent: markRaw(Step1Icon),
     text: 'Напиши <span class="font-bold text-secondary">@ho4ubot</span> в Telegram'
   },
   {
-    iconNumber: Step2IconNumber,
-    iconComponent: Step2Icon,
+    iconNumber: markRaw(Step2IconNumber),
+    iconComponent: markRaw(Step2Icon),
     text: "Добавь пару хотелок"
   },
   {
-    iconNumber: Step3IconNumber,
-    iconComponent: Step3Icon,
+    iconNumber: markRaw(Step3IconNumber),
+    iconComponent: markRaw(Step3Icon),
     text: "Отправь ссылку друзьям и жди чуда"
   }
 ])
