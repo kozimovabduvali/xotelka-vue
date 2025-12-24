@@ -21,49 +21,50 @@
 </template>
 
 <script setup>
+import { markRaw } from 'vue';
 import CheckIcon from '../components/icons/CheckIcon.vue'
 import ClockIcon from '../components/icons/ClockIcon.vue'
 
 const features = [
   {
     text: 'Делиться с друзьями Вашими хотелками',
-    icon: CheckIcon,
+    icon: markRaw(CheckIcon),
   },
   {
     text: 'Добавлять пользователей в избранное для быстрого доступа к их хотелкам',
-    icon: CheckIcon,
+    icon: markRaw(CheckIcon),
   },
   {
     text: 'Бронировать хотелки друзей анонимно',
-    icon: CheckIcon,
+    icon: markRaw(CheckIcon),
   },
   {
     text: 'Искать пользователя по номеру телефона или нику в Telegram прямо в боте',
-    icon: CheckIcon,
+    icon: markRaw(CheckIcon),
   },
   {
     text: 'Получать напоминания о важных датах',
-    icon: ClockIcon,
+    icon: markRaw(ClockIcon),
     disabled: true,
   },
   {
     text: 'Добавлять в календарь важные даты',
-    icon: ClockIcon,
+    icon: markRaw(ClockIcon),
     disabled: true,
   },
   {
     text: 'Играть с друзьями или коллегами в «Тайного Санту»',
-    icon: ClockIcon,
+    icon: markRaw(ClockIcon),
     disabled: true,
   },
   {
     text: 'Переносить свои хотелки из других сервисов в Хотелку-Бота',
-    icon: ClockIcon,
+    icon: markRaw(ClockIcon),
     disabled: true,
   },
   {
     text: 'Создавать неограниченное количество виш-листов',
-    icon: ClockIcon,
+    icon: markRaw(ClockIcon),
     disabled: true,
   },
 ]

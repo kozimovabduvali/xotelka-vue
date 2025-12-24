@@ -37,7 +37,7 @@
 <script setup>
 import { reactive, markRaw } from 'vue'
 
-// Icon komponentlarini import qilamiz
+// Icon 
 import Step1IconNumber from '../components/icons/Step1IconNumber.vue'
 import Step2IconNumber from '../components/icons/Step2IconNumber.vue'
 import Step3IconNumber from '../components/icons/Step3IconNumber.vue'
