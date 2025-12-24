@@ -50,12 +50,12 @@
 <script setup>
 import { ref } from 'vue'
 
-// Form inputlari
+// Form 
 const title = ref('')
 const link = ref('')
 const note = ref('')
 
-// Form submit funksiyasi
+// Form submit 
 function submitForm() {
   if (!title.value && !link.value && !note.value) return
   console.log('Новая хотелка:', { title: title.value, link: link.value, note: note.value })
