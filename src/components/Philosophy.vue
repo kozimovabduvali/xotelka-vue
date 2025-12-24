@@ -7,7 +7,7 @@
 
       <div
         class="max-md:text-center flex max-md:flex-col items-center justify-between gap-10 border border-secondary rounded-2xl p-8">
-        <img src="@/assets/images/f-gift.png" alt="gift" class="shrink-0 h-16 md:h-25 lg:h-37.5 object-contain" />
+        <img src="../assets/images/f-gift.png" alt="gift" class="shrink-0 h-16 md:h-25 lg:h-37.5 object-contain" />
 
         <div>
           <p class="max-md:text-sm lg:text-xl mb-4">
