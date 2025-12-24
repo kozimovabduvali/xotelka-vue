@@ -41,7 +41,7 @@
 
 
 @utility main-btn {
-  @apply inline-flex items-center bg-secondary text-white font-bold min-h-12.75 rounded-lg py-3 px-5 transition duration-300 hover:bg-secondary/75
+  @apply inline-flex items-center justify-center bg-secondary text-white font-bold min-h-12.75 rounded-lg py-3 px-5 transition duration-300 hover:bg-secondary/75
 }
 
 
