@@ -26,7 +26,7 @@
         </p>
       </div>
 
-      <a href="#"
+      <a href="/"
         class="max-md:text-sm !leading-none flex border bg-transparent border-secondary text-secondary rounded-lg transition duration-200 hover:bg-secondary hover:text-white text-center w-max mx-auto px-5 py-2.5 lg:py-4">
         На главную
       </a>
